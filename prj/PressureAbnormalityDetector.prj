@@ -1,0 +1,3 @@
+verilog work "../src/PressureAnalyzer.v"
+verilog work "../src/ParityErrorChecker.v"
+verilog work "../src/PressureAbnormalityDetector.v"

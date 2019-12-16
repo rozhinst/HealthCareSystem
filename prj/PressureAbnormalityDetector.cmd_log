@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/PressureAbnormalityDetector.xst" -ofn "D:/LogicProject/prj/PressureAbnormalityDetector.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/PressureAbnormalityDetector.xst" -ofn "D:/LogicProject/prj/PressureAbnormalityDetector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 PressureAbnormalityDetector.ngc PressureAbnormalityDetector.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o PressureAbnormalityDetector_map.ncd PressureAbnormalityDetector.ngd PressureAbnormalityDetector.pcf 
+par -w -intstyle ise -ol high -t 1 PressureAbnormalityDetector_map.ncd PressureAbnormalityDetector.ncd PressureAbnormalityDetector.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PressureAbnormalityDetector.twx PressureAbnormalityDetector.ncd -o PressureAbnormalityDetector.twr PressureAbnormalityDetector.pcf 

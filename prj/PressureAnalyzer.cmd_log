@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/PressureAnalyzer.xst" -ofn "D:/LogicProject/prj/PressureAnalyzer.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/PressureAnalyzer.xst" -ofn "D:/LogicProject/prj/PressureAnalyzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 PressureAnalyzer.ngc PressureAnalyzer.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o PressureAnalyzer_map.ncd PressureAnalyzer.ngd PressureAnalyzer.pcf 
+par -w -intstyle ise -ol high -t 1 PressureAnalyzer_map.ncd PressureAnalyzer.ncd PressureAnalyzer.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PressureAnalyzer.twx PressureAnalyzer.ncd -o PressureAnalyzer.twr PressureAnalyzer.pcf 

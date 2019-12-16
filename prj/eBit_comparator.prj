@@ -1,0 +1,2 @@
+verilog work "../aBit_comparator.v"
+verilog work "../eBit_comparator.v"

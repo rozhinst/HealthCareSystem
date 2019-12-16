@@ -1,0 +1,347 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: GlycemicIndexCalculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GlycemicIndexCalculator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GlycemicIndexCalculator"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : GlycemicIndexCalculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../fullAdder.v" in library work
+Compiling verilog file "../mux2x1.v" in library work
+Module <fullAdder> compiled
+Compiling verilog file "../eightBitAdder.v" in library work
+Module <mux2x1> compiled
+Compiling verilog file "../src/GlycemicIndexCalculator.v" in library work
+Module <eightBitAdder> compiled
+Module <GlycemicIndexCalculator> compiled
+No errors in compilation
+Analysis of file <"GlycemicIndexCalculator.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <GlycemicIndexCalculator> in library <work>.
+
+Analyzing hierarchy for module <mux2x1> in library <work>.
+
+Analyzing hierarchy for module <eightBitAdder> in library <work>.
+
+Analyzing hierarchy for module <fullAdder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <GlycemicIndexCalculator>.
+Module <GlycemicIndexCalculator> is correct for synthesis.
+ 
+Analyzing module <mux2x1> in library <work>.
+Module <mux2x1> is correct for synthesis.
+ 
+Analyzing module <eightBitAdder> in library <work>.
+Module <eightBitAdder> is correct for synthesis.
+ 
+Analyzing module <fullAdder> in library <work>.
+Module <fullAdder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux2x1>.
+    Related source file is "../mux2x1.v".
+Unit <mux2x1> synthesized.
+
+
+Synthesizing Unit <fullAdder>.
+    Related source file is "../fullAdder.v".
+    Found 1-bit xor2 for signal <sum>.
+    Found 1-bit xor2 for signal <WIRE_1>.
+Unit <fullAdder> synthesized.
+
+
+Synthesizing Unit <eightBitAdder>.
+    Related source file is "../eightBitAdder.v".
+Unit <eightBitAdder> synthesized.
+
+
+Synthesizing Unit <GlycemicIndexCalculator>.
+    Related source file is "../src/GlycemicIndexCalculator.v".
+WARNING:Xst:646 - Signal <sum<8:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <GlycemicIndexCalculator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 40
+ 1-bit xor2                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <f4> is unconnected in block <onesCounter>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f5> is unconnected in block <onesCounter>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f6> is unconnected in block <onesCounter>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f7> is unconnected in block <onesCounter>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 40
+ 1-bit xor2                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GlycemicIndexCalculator> ...
+
+Optimizing unit <eightBitAdder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GlycemicIndexCalculator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GlycemicIndexCalculator.ngr
+Top Level Output File Name         : GlycemicIndexCalculator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 20
+#      LUT2                        : 1
+#      LUT3                        : 5
+#      LUT4                        : 13
+#      MUXF5                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 8
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       11  out of   3584     0%  
+ Number of 4 input LUTs:                 19  out of   7168     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    141     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 16.008ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 494 / 4
+-------------------------------------------------------------------------
+Delay:               16.008ns (Levels of Logic = 9)
+  Source:            bloodSensor<7> (PAD)
+  Destination:       glycemicIndex<3> (PAD)
+
+  Data Path: bloodSensor<7> to glycemicIndex<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.715   1.250  bloodSensor_7_IBUF (bloodSensor_7_IBUF)
+     LUT4:I0->O            2   0.479   0.804  add/f2/cout1 (add/carry<2>)
+     LUT4:I2->O            2   0.479   0.915  add/f4/Mxor_sum_Result1 (addResult<4>)
+     LUT4:I1->O            3   0.479   0.941  f2/Mxor_sum_Result1 (fRes2<0>)
+     LUT3:I1->O            3   0.479   0.830  f3/cout1 (tempCout)
+     LUT3:I2->O            2   0.479   0.804  f4/Mxor_sum_Result1 (fRes3<1>)
+     LUT3:I2->O            2   0.479   0.804  onesCounter/f1/cout1 (onesCounter/carry<1>)
+     LUT4:I2->O            1   0.479   0.681  onesCounter/f2/cout1 (glycemicIndex_3_OBUF)
+     OBUF:I->O                 4.909          glycemicIndex_3_OBUF (glycemicIndex<3>)
+    ----------------------------------------
+    Total                     16.008ns (8.977ns logic, 7.031ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.44 secs
+ 
+--> 
+
+Total memory usage is 4506512 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,210 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'HealthcareSystemFirstPhase'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off
+-c 100 -o HealthcareSystemFirstPhase_map.ncd HealthcareSystemFirstPhase.ngd
+HealthcareSystemFirstPhase.pcf 
+Target Device  : xc3s400
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Mon Dec 16 13:32:45 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:                74 out of   7,168    1%
+Logic Distribution:
+  Number of occupied Slices:             41 out of   3,584    1%
+    Number of Slices containing only related logic:      41 out of      41 100%
+    Number of Slices containing unrelated logic:          0 out of      41   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          75 out of   7,168    1%
+    Number used as logic:                74
+    Number used as a route-thru:          1
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 59 out of     141   41%
+
+Average Fanout of Non-Clock Nets:                2.22
+
+Peak Memory Usage:  4390 MB
+Total REAL time to MAP completion:  0 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network bloodType<2> has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   bloodType<0>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| bloodAbnormality                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| bloodPH<0>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodPH<1>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodPH<2>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodPH<3>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<0>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<1>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<2>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<3>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<4>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<5>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<6>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodSensor<7>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bloodType<1>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<0>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<1>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<2>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<3>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<4>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<5>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<6>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryBaseTemp<7>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryTempCoef<0>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryTempCoef<1>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryTempCoef<2>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| factoryTempCoef<3>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fallDetected                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| fdFactoryValue<0>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<1>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<2>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<3>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<4>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<5>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<6>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdFactoryValue<7>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<0>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<1>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<2>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<3>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<4>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<5>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<6>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| fdSensorValue<7>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| glycemicIndex<0>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| glycemicIndex<1>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| glycemicIndex<2>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| glycemicIndex<3>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pressureData<0>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| pressureData<1>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| pressureData<2>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| pressureData<3>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| pressureData<4>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| pressureData<5>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| presureAbnormality                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| tempSensorValue<0>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| tempSensorValue<1>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| tempSensorValue<2>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| tempSensorValue<3>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| temperatureAbnormality             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

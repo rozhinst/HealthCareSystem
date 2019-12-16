@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="661" delta="unknown" >"D:/LogicProject/prj/../mux2x1.v" Line 21: Non-net port <arg fmt="%s" index="1">sel</arg> cannot be of mode <arg fmt="%s" index="2">input</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="661" delta="unknown" >"D:/LogicProject/prj/../mux2x1.v" Line 22: Non-net port <arg fmt="%s" index="1">in1</arg> cannot be of mode <arg fmt="%s" index="2">input</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="661" delta="unknown" >"D:/LogicProject/prj/../mux2x1.v" Line 23: Non-net port <arg fmt="%s" index="1">in2</arg> cannot be of mode <arg fmt="%s" index="2">input</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/LogicProject/prj/../mux2x1.v" Line 32: Target &lt;<arg fmt="%s" index="1">out</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/LogicProject/prj/../mux2x1.v" Line 21: Module &lt;<arg fmt="%s" index="1">mux2x1</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

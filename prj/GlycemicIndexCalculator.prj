@@ -1,0 +1,4 @@
+verilog work "../fullAdder.v"
+verilog work "../mux2x1.v"
+verilog work "../eightBitAdder.v"
+verilog work "../src/GlycemicIndexCalculator.v"

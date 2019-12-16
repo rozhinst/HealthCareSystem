@@ -1,0 +1,408 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: TemperatureAbnormalityDetector.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TemperatureAbnormalityDetector.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TemperatureAbnormalityDetector"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : TemperatureAbnormalityDetector
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../fullAdder.v" in library work
+Compiling verilog file "../multiplier.v" in library work
+Module <fullAdder> compiled
+Compiling verilog file "../eightBitAdder.v" in library work
+Module <multiplier> compiled
+Compiling verilog file "../multiplierFourToFour.v" in library work
+Module <eightBitAdder> compiled
+Compiling verilog file "../src/TemperatureCalculator.v" in library work
+Module <multiplierFourToFour> compiled
+Compiling verilog file "../src/TemperatureAnalyzer.v" in library work
+Module <TemperatureCalculator> compiled
+Compiling verilog file "../src/TemperatureAbnormalityDetector.v" in library work
+Module <TemperatureAnalyzer> compiled
+Module <TemperatureAbnormalityDetector> compiled
+No errors in compilation
+Analysis of file <"TemperatureAbnormalityDetector.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <TemperatureAbnormalityDetector> in library <work>.
+
+Analyzing hierarchy for module <TemperatureCalculator> in library <work>.
+
+Analyzing hierarchy for module <TemperatureAnalyzer> in library <work>.
+
+Analyzing hierarchy for module <multiplierFourToFour> in library <work>.
+
+Analyzing hierarchy for module <eightBitAdder> in library <work>.
+
+Analyzing hierarchy for module <multiplier> in library <work>.
+
+Analyzing hierarchy for module <fullAdder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <TemperatureAbnormalityDetector>.
+Module <TemperatureAbnormalityDetector> is correct for synthesis.
+ 
+Analyzing module <TemperatureCalculator> in library <work>.
+Module <TemperatureCalculator> is correct for synthesis.
+ 
+Analyzing module <multiplierFourToFour> in library <work>.
+Module <multiplierFourToFour> is correct for synthesis.
+ 
+Analyzing module <multiplier> in library <work>.
+Module <multiplier> is correct for synthesis.
+ 
+Analyzing module <eightBitAdder> in library <work>.
+Module <eightBitAdder> is correct for synthesis.
+ 
+Analyzing module <fullAdder> in library <work>.
+Module <fullAdder> is correct for synthesis.
+ 
+Analyzing module <TemperatureAnalyzer> in library <work>.
+Module <TemperatureAnalyzer> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <TemperatureAnalyzer>.
+    Related source file is "../src/TemperatureAnalyzer.v".
+    Found 8-bit comparator greater for signal <temperatureAbnormality$cmp_gt0000> created at line 25.
+    Found 8-bit comparator less for signal <temperatureAbnormality$cmp_lt0000> created at line 25.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <TemperatureAnalyzer> synthesized.
+
+
+Synthesizing Unit <multiplier>.
+    Related source file is "../multiplier.v".
+Unit <multiplier> synthesized.
+
+
+Synthesizing Unit <fullAdder>.
+    Related source file is "../fullAdder.v".
+    Found 1-bit xor2 for signal <sum>.
+    Found 1-bit xor2 for signal <WIRE_1>.
+Unit <fullAdder> synthesized.
+
+
+Synthesizing Unit <eightBitAdder>.
+    Related source file is "../eightBitAdder.v".
+Unit <eightBitAdder> synthesized.
+
+
+Synthesizing Unit <multiplierFourToFour>.
+    Related source file is "../multiplierFourToFour.v".
+WARNING:Xst:646 - Signal <carry3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <carry2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <carry1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <multiplierFourToFour> synthesized.
+
+
+Synthesizing Unit <TemperatureCalculator>.
+    Related source file is "../src/TemperatureCalculator.v".
+WARNING:Xst:646 - Signal <mOut<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <carry> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <TemperatureCalculator> synthesized.
+
+
+Synthesizing Unit <TemperatureAbnormalityDetector>.
+    Related source file is "../src/TemperatureAbnormalityDetector.v".
+Unit <TemperatureAbnormalityDetector> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <f0> is unconnected in block <a1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f1> is unconnected in block <a1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f7> is unconnected in block <a1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f0> is unconnected in block <a2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f1> is unconnected in block <a2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f0> is unconnected in block <a3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <f1> is unconnected in block <a3>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TemperatureAbnormalityDetector> ...
+
+Optimizing unit <eightBitAdder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TemperatureAbnormalityDetector, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TemperatureAbnormalityDetector.ngr
+Top Level Output File Name         : TemperatureAbnormalityDetector
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 43
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 18
+#      LUT4                        : 22
+#      MUXF5                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 16
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       24  out of   3584     0%  
+ Number of 4 input LUTs:                 41  out of   7168     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    141    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 21.818ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1303 / 1
+-------------------------------------------------------------------------
+Delay:               21.818ns (Levels of Logic = 13)
+  Source:            factoryTempCoef<0> (PAD)
+  Destination:       temperatureAbnormality (PAD)
+
+  Data Path: factoryTempCoef<0> to temperatureAbnormality
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.715   1.148  factoryTempCoef_0_IBUF (factoryTempCoef_0_IBUF)
+     LUT4:I0->O            2   0.479   1.040  TemperatureCalculatorUnit/m/m1/out_2_or00001 (TemperatureCalculatorUnit/m/wm1<2>)
+     LUT3:I0->O            3   0.479   0.830  TemperatureCalculatorUnit/m/a1/f2/cout1 (TemperatureCalculatorUnit/m/a1/carry<2>)
+     LUT3:I2->O            2   0.479   0.804  TemperatureCalculatorUnit/m/a1/f3/Mxor_sum_Result1 (TemperatureCalculatorUnit/m/sum1<3>)
+     LUT3:I2->O            2   0.479   0.915  TemperatureCalculatorUnit/m/a3/f3/cout1 (TemperatureCalculatorUnit/m/a3/carry<3>)
+     LUT3:I1->O            3   0.479   0.830  TemperatureCalculatorUnit/m/a3/f4/cout1 (TemperatureCalculatorUnit/m/a3/carry<4>)
+     LUT3:I2->O            2   0.479   1.040  TemperatureCalculatorUnit/m/a3/f5/Mxor_sum_Result1 (TemperatureCalculatorUnit/mOut<5>)
+     LUT3:I0->O            2   0.479   0.915  TemperatureCalculatorUnit/add/f2/cout1 (TemperatureCalculatorUnit/add/carry<2>)
+     LUT3:I1->O            2   0.479   1.040  TemperatureCalculatorUnit/add/f3/cout1 (TemperatureCalculatorUnit/add/carry<3>)
+     LUT3:I0->O            1   0.479   0.704  TemperatureAnalyzerUnit/temperatureAbnormality317_SW0_SW0 (N21)
+     LUT4:I3->O            1   0.479   0.976  TemperatureAnalyzerUnit/temperatureAbnormality317_SW0 (N15)
+     LUT3:I0->O            1   0.479   0.681  TemperatureAnalyzerUnit/temperatureAbnormality317 (temperatureAbnormality_OBUF)
+     OBUF:I->O                 4.909          temperatureAbnormality_OBUF (temperatureAbnormality)
+    ----------------------------------------
+    Total                     21.818ns (10.893ns logic, 10.925ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.97 secs
+ 
+--> 
+
+Total memory usage is 4507536 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

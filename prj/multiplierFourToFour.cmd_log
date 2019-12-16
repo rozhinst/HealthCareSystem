@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 multiplierFourToFour.ngc multiplierFourToFour.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o multiplierFourToFour_map.ncd multiplierFourToFour.ngd multiplierFourToFour.pcf 
+par -w -intstyle ise -ol high -t 1 multiplierFourToFour_map.ncd multiplierFourToFour.ncd multiplierFourToFour.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml multiplierFourToFour.twx multiplierFourToFour.ncd -o multiplierFourToFour.twr multiplierFourToFour.pcf 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 multiplierFourToFour.ngc multiplierFourToFour.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o multiplierFourToFour_map.ncd multiplierFourToFour.ngd multiplierFourToFour.pcf 
+par -w -intstyle ise -ol high -t 1 multiplierFourToFour_map.ncd multiplierFourToFour.ncd multiplierFourToFour.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml multiplierFourToFour.twx multiplierFourToFour.ncd -o multiplierFourToFour.twr multiplierFourToFour.pcf 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 multiplierFourToFour.ngc multiplierFourToFour.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o multiplierFourToFour_map.ncd multiplierFourToFour.ngd multiplierFourToFour.pcf 
+par -w -intstyle ise -ol high -t 1 multiplierFourToFour_map.ncd multiplierFourToFour.ncd multiplierFourToFour.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml multiplierFourToFour.twx multiplierFourToFour.ncd -o multiplierFourToFour.twr multiplierFourToFour.pcf 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 multiplierFourToFour.ngc multiplierFourToFour.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o multiplierFourToFour_map.ncd multiplierFourToFour.ngd multiplierFourToFour.pcf 
+par -w -intstyle ise -ol high -t 1 multiplierFourToFour_map.ncd multiplierFourToFour.ncd multiplierFourToFour.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml multiplierFourToFour.twx multiplierFourToFour.ncd -o multiplierFourToFour.twr multiplierFourToFour.pcf 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplierFourToFour.xst" -ofn "D:/LogicProject/prj/multiplierFourToFour.syr" 

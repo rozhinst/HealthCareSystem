@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/FallingDetector.xst" -ofn "D:/LogicProject/prj/FallingDetector.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/FallingDetector.xst" -ofn "D:/LogicProject/prj/FallingDetector.syr" 

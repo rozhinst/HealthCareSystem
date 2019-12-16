@@ -1,0 +1,4 @@
+verilog work "../muxFourToOne.v"
+verilog work "../src/BloodTypeClassification.v"
+verilog work "../src/BloodPHAnalyzer.v"
+verilog work "../src/BloodAbnormalityDetector.v"

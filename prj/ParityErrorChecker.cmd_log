@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/ParityErrorChecker.xst" -ofn "D:/LogicProject/prj/ParityErrorChecker.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ParityErrorChecker.ngc ParityErrorChecker.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ParityErrorChecker_map.ncd ParityErrorChecker.ngd ParityErrorChecker.pcf 
+par -w -intstyle ise -ol high -t 1 ParityErrorChecker_map.ncd ParityErrorChecker.ncd ParityErrorChecker.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ParityErrorChecker.twx ParityErrorChecker.ncd -o ParityErrorChecker.twr ParityErrorChecker.pcf 
+xst -intstyle ise -ifn "D:/LogicProject/prj/ParityErrorChecker.xst" -ofn "D:/LogicProject/prj/ParityErrorChecker.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 ParityErrorChecker.ngc ParityErrorChecker.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o ParityErrorChecker_map.ncd ParityErrorChecker.ngd ParityErrorChecker.pcf 
+par -w -intstyle ise -ol high -t 1 ParityErrorChecker_map.ncd ParityErrorChecker.ncd ParityErrorChecker.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ParityErrorChecker.twx ParityErrorChecker.ncd -o ParityErrorChecker.twr ParityErrorChecker.pcf 

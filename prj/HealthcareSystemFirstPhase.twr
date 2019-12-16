@@ -1,0 +1,136 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml HealthcareSystemFirstPhase.twx
+HealthcareSystemFirstPhase.ncd -o HealthcareSystemFirstPhase.twr
+HealthcareSystemFirstPhase.pcf
+
+Design file:              HealthcareSystemFirstPhase.ncd
+Physical constraint file: HealthcareSystemFirstPhase.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+------------------+----------------------+---------+
+Source Pad        |Destination Pad       |  Delay  |
+------------------+----------------------+---------+
+bloodPH<0>        |bloodAbnormality      |    7.145|
+bloodPH<1>        |bloodAbnormality      |    6.998|
+bloodPH<2>        |bloodAbnormality      |    6.846|
+bloodPH<3>        |bloodAbnormality      |    7.116|
+bloodSensor<0>    |glycemicIndex<0>      |   11.088|
+bloodSensor<0>    |glycemicIndex<1>      |   12.502|
+bloodSensor<0>    |glycemicIndex<2>      |   13.033|
+bloodSensor<0>    |glycemicIndex<3>      |   12.401|
+bloodSensor<1>    |glycemicIndex<0>      |   10.287|
+bloodSensor<1>    |glycemicIndex<1>      |   11.701|
+bloodSensor<1>    |glycemicIndex<2>      |   12.232|
+bloodSensor<1>    |glycemicIndex<3>      |   11.600|
+bloodSensor<2>    |glycemicIndex<0>      |   10.479|
+bloodSensor<2>    |glycemicIndex<1>      |   11.893|
+bloodSensor<2>    |glycemicIndex<2>      |   12.424|
+bloodSensor<2>    |glycemicIndex<3>      |   11.792|
+bloodSensor<3>    |glycemicIndex<0>      |    9.901|
+bloodSensor<3>    |glycemicIndex<1>      |   11.315|
+bloodSensor<3>    |glycemicIndex<2>      |   11.846|
+bloodSensor<3>    |glycemicIndex<3>      |   11.214|
+bloodSensor<4>    |glycemicIndex<0>      |    9.801|
+bloodSensor<4>    |glycemicIndex<1>      |   11.215|
+bloodSensor<4>    |glycemicIndex<2>      |   11.746|
+bloodSensor<4>    |glycemicIndex<3>      |   11.114|
+bloodSensor<5>    |glycemicIndex<0>      |    9.423|
+bloodSensor<5>    |glycemicIndex<1>      |   10.837|
+bloodSensor<5>    |glycemicIndex<2>      |   11.368|
+bloodSensor<5>    |glycemicIndex<3>      |   10.736|
+bloodSensor<6>    |glycemicIndex<0>      |    9.005|
+bloodSensor<6>    |glycemicIndex<1>      |   10.434|
+bloodSensor<6>    |glycemicIndex<2>      |   10.965|
+bloodSensor<6>    |glycemicIndex<3>      |   10.333|
+bloodSensor<7>    |glycemicIndex<0>      |   11.036|
+bloodSensor<7>    |glycemicIndex<1>      |   12.450|
+bloodSensor<7>    |glycemicIndex<2>      |   12.981|
+bloodSensor<7>    |glycemicIndex<3>      |   12.349|
+bloodType<1>      |bloodAbnormality      |    7.670|
+factoryBaseTemp<0>|temperatureAbnormality|   10.646|
+factoryBaseTemp<1>|temperatureAbnormality|   11.386|
+factoryBaseTemp<2>|temperatureAbnormality|   10.365|
+factoryBaseTemp<3>|temperatureAbnormality|    9.205|
+factoryBaseTemp<4>|temperatureAbnormality|    8.055|
+factoryBaseTemp<5>|temperatureAbnormality|    8.809|
+factoryBaseTemp<6>|temperatureAbnormality|    6.911|
+factoryBaseTemp<7>|temperatureAbnormality|    7.108|
+factoryTempCoef<0>|temperatureAbnormality|   15.045|
+factoryTempCoef<1>|temperatureAbnormality|   15.216|
+factoryTempCoef<2>|temperatureAbnormality|   14.553|
+factoryTempCoef<3>|temperatureAbnormality|   15.043|
+fdFactoryValue<0> |fallDetected          |   10.596|
+fdFactoryValue<1> |fallDetected          |   10.788|
+fdFactoryValue<2> |fallDetected          |   10.063|
+fdFactoryValue<3> |fallDetected          |   10.286|
+fdFactoryValue<4> |fallDetected          |    9.622|
+fdFactoryValue<5> |fallDetected          |   10.273|
+fdFactoryValue<6> |fallDetected          |    9.339|
+fdFactoryValue<7> |fallDetected          |    7.985|
+fdSensorValue<0>  |fallDetected          |   11.218|
+fdSensorValue<1>  |fallDetected          |   10.972|
+fdSensorValue<2>  |fallDetected          |   10.515|
+fdSensorValue<3>  |fallDetected          |    9.951|
+fdSensorValue<4>  |fallDetected          |   10.071|
+fdSensorValue<5>  |fallDetected          |   10.105|
+fdSensorValue<6>  |fallDetected          |    8.455|
+fdSensorValue<7>  |fallDetected          |    7.727|
+pressureData<0>   |presureAbnormality    |    8.305|
+pressureData<1>   |presureAbnormality    |    8.319|
+pressureData<2>   |presureAbnormality    |    8.572|
+pressureData<3>   |presureAbnormality    |    7.998|
+pressureData<4>   |presureAbnormality    |    7.779|
+pressureData<5>   |presureAbnormality    |    8.636|
+tempSensorValue<0>|temperatureAbnormality|   15.315|
+tempSensorValue<1>|temperatureAbnormality|   15.537|
+tempSensorValue<2>|temperatureAbnormality|   15.034|
+tempSensorValue<3>|temperatureAbnormality|   14.758|
+------------------+----------------------+---------+
+
+
+Analysis completed Mon Dec 16 13:32:52 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4479 MB
+
+
+

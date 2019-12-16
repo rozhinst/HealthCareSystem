@@ -1,0 +1,4 @@
+verilog work "../fullAdder.v"
+verilog work "../multiplier.v"
+verilog work "../eightBitAdder.v"
+verilog work "../multiplierFourToFour.v"

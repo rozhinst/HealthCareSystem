@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/GlycemicIndexCalculator.xst" -ofn "D:/LogicProject/prj/GlycemicIndexCalculator.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/GlycemicIndexCalculator.xst" -ofn "D:/LogicProject/prj/GlycemicIndexCalculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 GlycemicIndexCalculator.ngc GlycemicIndexCalculator.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o GlycemicIndexCalculator_map.ncd GlycemicIndexCalculator.ngd GlycemicIndexCalculator.pcf 
+par -w -intstyle ise -ol high -t 1 GlycemicIndexCalculator_map.ncd GlycemicIndexCalculator.ncd GlycemicIndexCalculator.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml GlycemicIndexCalculator.twx GlycemicIndexCalculator.ncd -o GlycemicIndexCalculator.twr GlycemicIndexCalculator.pcf 
+xst -intstyle ise -ifn "D:/LogicProject/prj/GlycemicIndexCalculator.xst" -ofn "D:/LogicProject/prj/GlycemicIndexCalculator.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/GlycemicIndexCalculator.xst" -ofn "D:/LogicProject/prj/GlycemicIndexCalculator.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/GlycemicIndexCalculator.xst" -ofn "D:/LogicProject/prj/GlycemicIndexCalculator.syr" 

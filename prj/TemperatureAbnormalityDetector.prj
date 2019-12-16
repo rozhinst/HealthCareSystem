@@ -1,0 +1,7 @@
+verilog work "../fullAdder.v"
+verilog work "../multiplier.v"
+verilog work "../eightBitAdder.v"
+verilog work "../multiplierFourToFour.v"
+verilog work "../src/TemperatureCalculator.v"
+verilog work "../src/TemperatureAnalyzer.v"
+verilog work "../src/TemperatureAbnormalityDetector.v"

@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/LogicProject/prj/HealthcareSystemFirstPhaseTestbench_isim_beh.exe -prj D:/LogicProject/prj/HealthcareSystemFirstPhaseTestbench_beh.prj work.HealthcareSystemFirstPhaseTestbench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/LogicProject/prj/../fullAdder.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../multiplier.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../eightBitAdder.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../aBit_comparator.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../muxFourToOne.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../multiplierFourToFour.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../eBit_comparator.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/TemperatureCalculator.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/TemperatureAnalyzer.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/PressureAnalyzer.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/ParityErrorChecker.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/Comparator8Bit.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/BloodTypeClassification.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../src/BloodPHAnalyzer.v" into library work
+Analyzing Verilog file "D:/LogicProject/prj/../mux2x1.v" into library work
+ERROR:HDLCompiler:661 - "D:/LogicProject/prj/../mux2x1.v" Line 21: Non-net port sel cannot be of mode input
+ERROR:HDLCompiler:661 - "D:/LogicProject/prj/../mux2x1.v" Line 22: Non-net port in1 cannot be of mode input
+ERROR:HDLCompiler:661 - "D:/LogicProject/prj/../mux2x1.v" Line 23: Non-net port in2 cannot be of mode input
+WARNING:HDLCompiler:329 - "D:/LogicProject/prj/../mux2x1.v" Line 32: Target <out> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:598 - "D:/LogicProject/prj/../mux2x1.v" Line 21: Module <mux2x1> ignored due to previous errors.
+Verilog file D:/LogicProject/prj/../mux2x1.v ignored due to errors

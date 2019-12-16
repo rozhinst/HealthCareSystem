@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/TemperatureAnalyzer.xst" -ofn "D:/LogicProject/prj/TemperatureAnalyzer.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/TemperatureAnalyzer.xst" -ofn "D:/LogicProject/prj/TemperatureAnalyzer.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/TemperatureAnalyzer.xst" -ofn "D:/LogicProject/prj/TemperatureAnalyzer.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/TemperatureAnalyzer.xst" -ofn "D:/LogicProject/prj/TemperatureAnalyzer.syr" 

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/fullAdder.xst" -ofn "D:/LogicProject/prj/fullAdder.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/fullAdder.xst" -ofn "D:/LogicProject/prj/fullAdder.syr" 

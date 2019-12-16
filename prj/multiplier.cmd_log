@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/multiplier.xst" -ofn "D:/LogicProject/prj/multiplier.syr" 

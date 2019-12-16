@@ -1,0 +1,160 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml TemperatureCalculator.twx TemperatureCalculator.ncd -o
+TemperatureCalculator.twr TemperatureCalculator.pcf
+
+Design file:              TemperatureCalculator.ncd
+Physical constraint file: TemperatureCalculator.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+------------------+---------------+---------+
+Source Pad        |Destination Pad|  Delay  |
+------------------+---------------+---------+
+factoryBaseTemp<0>|temperature<0> |    7.352|
+factoryBaseTemp<0>|temperature<1> |    7.844|
+factoryBaseTemp<0>|temperature<2> |    8.488|
+factoryBaseTemp<0>|temperature<3> |    9.262|
+factoryBaseTemp<0>|temperature<4> |   10.053|
+factoryBaseTemp<0>|temperature<5> |    9.656|
+factoryBaseTemp<0>|temperature<6> |   11.214|
+factoryBaseTemp<0>|temperature<7> |   11.642|
+factoryBaseTemp<1>|temperature<1> |    7.692|
+factoryBaseTemp<1>|temperature<2> |    8.650|
+factoryBaseTemp<1>|temperature<3> |    9.424|
+factoryBaseTemp<1>|temperature<4> |   10.215|
+factoryBaseTemp<1>|temperature<5> |    9.818|
+factoryBaseTemp<1>|temperature<6> |   11.376|
+factoryBaseTemp<1>|temperature<7> |   11.804|
+factoryBaseTemp<2>|temperature<2> |    7.497|
+factoryBaseTemp<2>|temperature<3> |    7.978|
+factoryBaseTemp<2>|temperature<4> |    8.769|
+factoryBaseTemp<2>|temperature<5> |    8.372|
+factoryBaseTemp<2>|temperature<6> |    9.930|
+factoryBaseTemp<2>|temperature<7> |   10.358|
+factoryBaseTemp<3>|temperature<3> |    7.094|
+factoryBaseTemp<3>|temperature<4> |    8.056|
+factoryBaseTemp<3>|temperature<5> |    7.659|
+factoryBaseTemp<3>|temperature<6> |    9.217|
+factoryBaseTemp<3>|temperature<7> |    9.645|
+factoryBaseTemp<4>|temperature<4> |    7.279|
+factoryBaseTemp<4>|temperature<5> |    6.994|
+factoryBaseTemp<4>|temperature<6> |    8.777|
+factoryBaseTemp<4>|temperature<7> |    9.205|
+factoryBaseTemp<5>|temperature<5> |    6.537|
+factoryBaseTemp<5>|temperature<6> |    7.669|
+factoryBaseTemp<5>|temperature<7> |    7.677|
+factoryBaseTemp<6>|temperature<6> |    7.782|
+factoryBaseTemp<6>|temperature<7> |    7.574|
+factoryBaseTemp<7>|temperature<7> |    7.812|
+factoryTempCoef<0>|temperature<0> |   10.225|
+factoryTempCoef<0>|temperature<1> |   11.422|
+factoryTempCoef<0>|temperature<2> |   12.584|
+factoryTempCoef<0>|temperature<3> |   13.065|
+factoryTempCoef<0>|temperature<4> |   13.856|
+factoryTempCoef<0>|temperature<5> |   13.459|
+factoryTempCoef<0>|temperature<6> |   15.017|
+factoryTempCoef<0>|temperature<7> |   15.445|
+factoryTempCoef<1>|temperature<0> |   10.194|
+factoryTempCoef<1>|temperature<1> |   11.391|
+factoryTempCoef<1>|temperature<2> |   12.553|
+factoryTempCoef<1>|temperature<3> |   13.034|
+factoryTempCoef<1>|temperature<4> |   13.825|
+factoryTempCoef<1>|temperature<5> |   13.428|
+factoryTempCoef<1>|temperature<6> |   14.986|
+factoryTempCoef<1>|temperature<7> |   15.414|
+factoryTempCoef<2>|temperature<0> |   10.721|
+factoryTempCoef<2>|temperature<1> |   11.918|
+factoryTempCoef<2>|temperature<2> |   12.727|
+factoryTempCoef<2>|temperature<3> |   13.352|
+factoryTempCoef<2>|temperature<4> |   14.143|
+factoryTempCoef<2>|temperature<5> |   13.746|
+factoryTempCoef<2>|temperature<6> |   15.304|
+factoryTempCoef<2>|temperature<7> |   15.732|
+factoryTempCoef<3>|temperature<0> |   10.013|
+factoryTempCoef<3>|temperature<1> |   11.210|
+factoryTempCoef<3>|temperature<2> |   12.019|
+factoryTempCoef<3>|temperature<3> |   12.644|
+factoryTempCoef<3>|temperature<4> |   13.435|
+factoryTempCoef<3>|temperature<5> |   13.038|
+factoryTempCoef<3>|temperature<6> |   14.596|
+factoryTempCoef<3>|temperature<7> |   15.024|
+tempSensorValue<0>|temperature<0> |   11.045|
+tempSensorValue<0>|temperature<1> |   12.242|
+tempSensorValue<0>|temperature<2> |   13.404|
+tempSensorValue<0>|temperature<3> |   13.885|
+tempSensorValue<0>|temperature<4> |   14.676|
+tempSensorValue<0>|temperature<5> |   14.279|
+tempSensorValue<0>|temperature<6> |   15.837|
+tempSensorValue<0>|temperature<7> |   16.265|
+tempSensorValue<1>|temperature<0> |   10.715|
+tempSensorValue<1>|temperature<1> |   11.912|
+tempSensorValue<1>|temperature<2> |   13.074|
+tempSensorValue<1>|temperature<3> |   13.555|
+tempSensorValue<1>|temperature<4> |   14.346|
+tempSensorValue<1>|temperature<5> |   13.949|
+tempSensorValue<1>|temperature<6> |   15.507|
+tempSensorValue<1>|temperature<7> |   15.935|
+tempSensorValue<2>|temperature<0> |    9.899|
+tempSensorValue<2>|temperature<1> |   11.412|
+tempSensorValue<2>|temperature<2> |   12.221|
+tempSensorValue<2>|temperature<3> |   12.846|
+tempSensorValue<2>|temperature<4> |   13.637|
+tempSensorValue<2>|temperature<5> |   13.240|
+tempSensorValue<2>|temperature<6> |   14.798|
+tempSensorValue<2>|temperature<7> |   15.226|
+tempSensorValue<3>|temperature<0> |    8.690|
+tempSensorValue<3>|temperature<1> |   10.203|
+tempSensorValue<3>|temperature<2> |   11.012|
+tempSensorValue<3>|temperature<3> |   11.637|
+tempSensorValue<3>|temperature<4> |   12.428|
+tempSensorValue<3>|temperature<5> |   12.031|
+tempSensorValue<3>|temperature<6> |   13.731|
+tempSensorValue<3>|temperature<7> |   14.159|
+------------------+---------------+---------+
+
+
+Analysis completed Sun Dec 15 20:14:07 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4479 MB
+
+
+

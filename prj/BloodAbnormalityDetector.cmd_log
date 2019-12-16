@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/BloodAbnormalityDetector.xst" -ofn "D:/LogicProject/prj/BloodAbnormalityDetector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 BloodAbnormalityDetector.ngc BloodAbnormalityDetector.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o BloodAbnormalityDetector_map.ncd BloodAbnormalityDetector.ngd BloodAbnormalityDetector.pcf 
+par -w -intstyle ise -ol high -t 1 BloodAbnormalityDetector_map.ncd BloodAbnormalityDetector.ncd BloodAbnormalityDetector.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BloodAbnormalityDetector.twx BloodAbnormalityDetector.ncd -o BloodAbnormalityDetector.twr BloodAbnormalityDetector.pcf 

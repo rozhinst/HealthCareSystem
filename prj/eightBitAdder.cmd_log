@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/eightBitAdder.xst" -ofn "D:/LogicProject/prj/eightBitAdder.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/eightBitAdder.xst" -ofn "D:/LogicProject/prj/eightBitAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 eightBitAdder.ngc eightBitAdder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o eightBitAdder_map.ncd eightBitAdder.ngd eightBitAdder.pcf 
+par -w -intstyle ise -ol high -t 1 eightBitAdder_map.ncd eightBitAdder.ncd eightBitAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml eightBitAdder.twx eightBitAdder.ncd -o eightBitAdder.twr eightBitAdder.pcf 

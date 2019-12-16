@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/eBit_comparator.xst" -ofn "D:/LogicProject/prj/eBit_comparator.syr" 

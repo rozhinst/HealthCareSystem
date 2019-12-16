@@ -1,0 +1,3 @@
+verilog work "../aBit_comparator.v"
+verilog work "../eBit_comparator.v"
+verilog work "../src/Comparator8Bit.v"

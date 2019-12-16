@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/LogicProject/prj/TemperatureCalculator.xst" -ofn "D:/LogicProject/prj/TemperatureCalculator.syr" 
+xst -intstyle ise -ifn "D:/LogicProject/prj/TemperatureCalculator.xst" -ofn "D:/LogicProject/prj/TemperatureCalculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 TemperatureCalculator.ngc TemperatureCalculator.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o TemperatureCalculator_map.ncd TemperatureCalculator.ngd TemperatureCalculator.pcf 
+par -w -intstyle ise -ol high -t 1 TemperatureCalculator_map.ncd TemperatureCalculator.ncd TemperatureCalculator.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TemperatureCalculator.twx TemperatureCalculator.ncd -o TemperatureCalculator.twr TemperatureCalculator.pcf 
